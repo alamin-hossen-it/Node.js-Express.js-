@@ -1,21 +1,14 @@
-const express = require('express')
-const router = express.Router()
+
+const express = require('express');
+const router = express.Router();
+
+
 
 router.get('/register', (req, res)=>{
-    res.send('<h1>I am a get requst at register route</h1>');
-    res.end()
+    res.send('<h1>Hi im a get request from register route</h1>')
 });
 router.get('/login', (req, res)=>{
-    res.send('<h1>I am a get requst at login route</h1>');
-    res.end()
+    res.send('<h1>Hi im a get request from login route</h1>')
 });
-router.get('/singup ', (req, res)=>{
-    res.send('<h1>I am a get requst at sing-up route</h1>');
-    res.end()
-});
-router.use((req, res)=>{
-    res.send('<h1>Data Not Found 404!...</h1>')
-})
-
 
 module.exports = router;
