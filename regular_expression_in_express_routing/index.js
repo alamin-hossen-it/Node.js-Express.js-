@@ -6,7 +6,7 @@ app.get("/products/:id([0-5]{4})", (req, res)=>{
     res.send(`<h1>Id = ${req.params.id}</h1>`)
 })
 
-app.get("/products/:title([a-zA-Z]{4})", (req, res)=>{
+app.get("/products/:title([0-5]{4})", (req, res)=>{
     res.send(`<h1>Id = ${req.params.title}</h1>`)
 })
 
